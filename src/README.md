@@ -105,6 +105,6 @@ highlights:
 #        details: RTL 布局，打印支持，全局按钮等
 #        link: https://theme-hope.vuejs.press/zh/guide/interface/others.html
 
-copyright: Daoyi Real Estate
-footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | Copyright © 2025 道怡地产
+copyright: Copyright © 2025 道怡地产
+footer: 基于 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 框架构建 | 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议
 ---
