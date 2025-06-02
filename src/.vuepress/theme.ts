@@ -136,8 +136,8 @@ export default hopeTheme({
 
     docsearch: {
       appId: 'J8AAAZLZZ7',
-      apiKey: '94c1d72ea8e1533fc67c3e7244c7e196',
-      indexName: 'wiki_811520_xyz_j8aaazlzz7_pages',
+      apiKey: '45c6ec3c11d428613ff6ee21e534218d', 
+      indexName: 'daoyi-wiki',
       placeholder: '搜索文档',
       translations: {
         button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
