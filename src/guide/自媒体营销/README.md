@@ -1,6 +1,6 @@
 ---
 title: 自媒体营销
-index: true
+index: false
 icon: laptop-code
 order: 5
 tag:
@@ -15,3 +15,5 @@ category:
 ---
 
 <Catalog />
+
+# 自媒体营销
