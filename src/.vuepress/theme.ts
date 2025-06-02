@@ -122,6 +122,18 @@ export default hopeTheme({
   plugins: {
     sitemap: true,
     photoSwipe: true,
+    feed: true,
+    revealsjs: {
+      themes: "auto",
+      layout: "SlidePage",
+      plugins: [
+        "highlight",
+        "math",
+        "search",
+        "notes",
+        "zoom",
+      ],
+    },
     // 评论模块
     comment: {
       provider: "Waline",
