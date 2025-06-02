@@ -1,6 +1,6 @@
 ---
 title: 基础知识
-index: true
+index: false
 icon: laptop-code
 order: 1
 tag:
@@ -13,3 +13,5 @@ category:
 ---
 
 <Catalog />
+
+#基础知识
