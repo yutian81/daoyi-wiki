@@ -133,7 +133,7 @@ export default hopeTheme({
         "//unpkg.com/@waline/emojis@1.1.0/tieba",
       ],
     },
-
+    // 搜索模块
     docsearch: {
       appId: 'J8AAAZLZZ7',
       apiKey: '45c6ec3c11d428613ff6ee21e534218d', 
@@ -151,7 +151,16 @@ export default hopeTheme({
     },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: [
+        "SiteInfo",
+        "ArtPlayer",
+        "BiliBili",
+        "PDF",
+        "Share",
+        "VidStack",
+        "Badge",
+        "VPCard",
+        "VPBanner"],
     },
 
     icon: {
