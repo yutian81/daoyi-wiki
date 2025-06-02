@@ -1,6 +1,6 @@
 ---
 title: 销售接待
-index: false
+index: true
 icon: laptop-code
 order: 4
 tag:
