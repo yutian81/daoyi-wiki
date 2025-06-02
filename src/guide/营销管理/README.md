@@ -1,6 +1,6 @@
 ---
 title: 营销管理
-index: true
+index: false
 icon: laptop-code
 order: 2
 tag:
@@ -12,3 +12,5 @@ category:
 ---
 
 <Catalog />
+
+# 营销管理
