@@ -32,29 +32,11 @@ pnpm add -D vidstack@next
 
 pnpm add -D artplayer
 
-<ArtPlayer src="https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4" />
+<ArtPlayer
+  src="https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4"
+/>
 
 <ArtPlayer
   src="https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4" 
   poster="/poster.svg"
-/>
-
-<ArtPlayer
-  src="https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4"
-  airplay
-  aspect-ratio
-  auto-size
-  auto-orientation
-  auto-playback
-  fast-forward
-  flip
-  fullscreen-web
-  lock
-  loop
-  is-live
-  muted
-  mini-progress-bar
-  pip
-  screenshot
-  subtitle-offset
 />
