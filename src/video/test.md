@@ -3,7 +3,10 @@
   poster="https://files.vidstack.io/sprite-fight/poster.webp"
 />
 
-<VidStack src="//theme-hope-assets.vuejs.press/files/sample.mp3" title="VidStack 示例音频"
+<VidStack
+  src="https://theme-hope-assets.vuejs.press/files/sample.mp3"
+  title="VidStack 示例音频"
+/>
 
 <VidStack
   src="youtube/_cMxraX_5RE"
