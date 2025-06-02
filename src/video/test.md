@@ -9,6 +9,8 @@ category:
 
 <Catalog />
 
+# 测试
+
 使用本组件前，请先在你的项目中安装 vidstack@next 包:
 
 pnpm add -D vidstack@next
