@@ -25,10 +25,10 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "制度",
+      text: "关于",
       icon: "address-card",
-      prefix: "about/管理体系/",
-      link: "about/管理体系/",
+      prefix: "about/",
+      link: "about/",
       children: "structure",
     },
   ],
