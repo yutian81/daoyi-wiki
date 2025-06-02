@@ -153,14 +153,18 @@ export default hopeTheme({
     components: {
       components: [
         "SiteInfo",
+        "AudioPlayer",
+        "VideoPlayer",
         "ArtPlayer",
         "BiliBili",
+        "YouTube",
         "PDF",
         "Share",
         "VidStack",
         "Badge",
         "VPCard",
-        "VPBanner"],
+        "VPBanner"
+      ],
     },
 
     icon: {
