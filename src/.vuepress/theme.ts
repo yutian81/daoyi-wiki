@@ -5,33 +5,34 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://wiki.811520.xyz/",
-
   author: {
     name: "Daoyi Real Estate",
     url: "https://wiki.811520.xyz/",
   },
-
   logo: "/logo.svg",
-
   repo: "yutian81/daoyi-wiki",
-
   docsDir: "src",
+  fullscreen: true,
+  print: true,
 
   // 导航栏
   navbar,
-
   // 侧边栏
   sidebar,
-
   // 页脚
   footer: '基于 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 框架构建 | 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题',
   displayFooter: true,
 
   // 加密配置
   encrypt: {
+    global: false,
+    admin: {
+      password: "5678", // 也可以是数组
+      hint: "联系管理员获取访问密码",
+    },
     config: {
-      "/portfolio.md": {
-        hint: "Password: 1234",
+      "/portfolio/": {
+        hint: "联系管理员获取访问密码",
         password: "1234",
       },
     },
@@ -119,7 +120,9 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
-    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
+    sitemap: true,
+    photoSwipe: true,
+    // 评论模块
     comment: {
       provider: "Waline",
       serverURL: "https://waline.24811213.xyz/",
