@@ -1,6 +1,6 @@
 ---
 title: 基础知识
-index: false
+index: true
 icon: laptop-code
 order: 1
 tag:
