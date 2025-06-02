@@ -1,6 +1,6 @@
 ---
 title: 专题报告
-index: false
+index: true
 icon: laptop-code
 order: 6
 tag:
