@@ -1,3 +1,14 @@
+---
+title: 测试
+index: true
+order: 1
+category:
+  - 视频
+  - 知识
+---
+
+<Catalog />
+
 <VidStack
   src="https://files.vidstack.io/sprite-fight/720p.mp4"
   poster="https://files.vidstack.io/sprite-fight/poster.webp"
