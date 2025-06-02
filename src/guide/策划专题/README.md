@@ -1,6 +1,6 @@
 ---
 title: 策划专题
-index: false
+index: true
 icon: laptop-code
 order: 3
 tag:
