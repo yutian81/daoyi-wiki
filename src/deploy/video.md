@@ -1,12 +1,12 @@
 ---
-updated: 2025-06-03
-title: 视频组件
+title: 视频播放器
 index: true
 cover: 
 icon: 
 order: 1
 author: 
 date: 2025-06-03
+updated: 2025-06-03
 tag: []
 category:
   - 视频
@@ -17,7 +17,7 @@ footer:
 copyright: 
 ---
 
-# 视频组件
+# 视频播放器
 
 ## Vidstack 视频组件
 
