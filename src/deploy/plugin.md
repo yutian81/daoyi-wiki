@@ -227,15 +227,15 @@ copyright:
 
 ### VidStack---- 音视频组件，支持油管
 
-[移步到此](/deploy/视频组件#vidstack 视频组件/)
+[移步到此](/deploy/视频播放器#vidstack 视频组件/)
 
 ### ArtPlayer---- 视频组件
 
-[移步到此](/deploy/视频组件#ArtPlayer 视频组件/)
+[移步到此](/deploy/视频播放器#ArtPlayer 视频组件/)
 
 ### BiliBili----B 站视频
 
-[移步到此](/deploy/视频组件#Bilibili 视频组件/)
+[移步到此](/deploy/视频播放器#Bilibili 视频组件/)
 
 ## 插件
 
