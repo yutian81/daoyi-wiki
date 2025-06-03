@@ -14,6 +14,8 @@ pnpm create vuepress-theme-hope <替换为你的文件夹名>
 ```bash
 # 搜索插件
 pnpm add -D @vuepress/plugin-docsearch@next
+# rss插件
+pnpm add -D @vuepress/plugin-feed@next
 # pwa插件
 pnpm add -D @vuepress/plugin-pwa@next
 # waline评论插件
