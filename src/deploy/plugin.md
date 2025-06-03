@@ -1,5 +1,4 @@
 ---
-updated: 2025-06-03
 title: 组件与插件
 index: true
 cover: 
@@ -7,8 +6,9 @@ icon:
 order: 
 author: 
 date: 2025-06-03
+updated: 2025-06-03
 tag: []
-category: 
+category: []
 sticky: 
 star: 
 footer: 
