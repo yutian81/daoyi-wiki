@@ -6,11 +6,12 @@ icon:
 order: 1
 author: 
 date: 2025-06-03
-updated: 2025-06-03
-tag: []
+tag:
+  - 视频
+  - 说明
 category:
   - 视频
-  - 知识
+  - 说明
 sticky: 
 star: 
 footer: 
@@ -111,7 +112,6 @@ pnpm add -D bilibili-video-player@next
 - title 站视频标题
 - page 视频分页
 
-> 相关信息  
 > 设置视频分 P 时，必须提供 aid 和 cid，并且可以忽略 bvid 属性。
 
 - width 组件宽度
