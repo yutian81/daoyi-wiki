@@ -1,6 +1,5 @@
 ---
--updated: 2025-06-03
-title: ""
+title: Markdown
 index: true
 cover: 
 icon: fa6-brands:markdown
@@ -16,6 +15,8 @@ star:
 footer: 
 copyright: 
 ---
+
+# Markdown
 
 VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。
 
@@ -38,7 +39,6 @@ Frontmatter 是 VuePress 中很重要的一个概念，请阅读 [Frontmatter �
 :::
 
 ## Markdown 扩展
-
 
 VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来解析 Markdown 内容，因此可以借助于 markdown-it 插件来实现 [语法扩展](https://github.com/markdown-it/markdown-it#syntax-extensions) 。
 
@@ -92,6 +92,7 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 
 [^first]: 脚注 **可以包含特殊标记** 也可以由多个段落组成
 [^second]: 脚注文字。
+^[行内脚注文本]: 行内脚注文本
 ```
 
 ![image.png](https://pan.811520.xyz/2025-06/1748944227-image.webp)
@@ -146,7 +147,7 @@ layout: SlidePage
 @slideend
 ```
 
->你可以通过插件选项中的 `layout` 来自定义此行为，比如使用 `false` 来禁用它或填入其他布局名称。
+> 你可以通过插件选项中的 `layout` 来自定义此行为，比如使用 `false` 来禁用它或填入其他布局名称。
 
 #### 提示容器
 
@@ -168,6 +169,7 @@ layout: SlidePage
 ```
 
 支持的样式
+
 - important
 - info
 - note
@@ -200,8 +202,8 @@ layout: SlidePage
 
 #### 上下标
 
-- 使用`^ ^`进行上角标标注。
-- 使用`~ ~`进行下角标标注。
+- 使用 `^ ^` 进行上角标标注。
+- 使用 `~ ~` 进行下角标标注。
 - 你可以使用 `\` 来转义 `^` 和 `~`:
 
 ```
@@ -360,7 +362,7 @@ VuePress Theme Hope !!十分强大!!.
 
 #### MarkMap
 
-<iframe s  rc="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
+<iframe s rc="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/markmap.html)
 
@@ -372,7 +374,7 @@ VuePress Theme Hope !!十分强大!!.
 
 #### PlantUML
 
-@startuml
+@startuml  
 Alice -> Bob: 认证请求
 
 alt 成功情况
@@ -394,7 +396,7 @@ else 另一种失败
 
     Bob -> Alice: 请重复
 
-end
+end  
 @enduml
 
 - [View Detail](https://theme-hope.vuejs.press/zh/guide/markdown/chart/plantuml.html)
@@ -448,8 +450,6 @@ npm i -D vuepress-theme-hope
 <iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/sandpack.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/sandpack.html)
-
-[^1]: 这是脚注内容
 
 #### Vue 交互演示
 
