@@ -78,7 +78,15 @@ export default hopeTheme({
     sup: true,
     tabs: true,
     tasklist: true,
+    alert: true,
     vPre: true,
+    linksCheck: true,
+
+    // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
+    revealjs: {
+      themes: ["auto"],
+      plugins: ["highlight","math","search","notes","zoom"],
+    },
 
     // 取消注释它们如果你需要 TeX 支持
     // math: {
@@ -86,11 +94,6 @@ export default hopeTheme({
     //   type: "katex",
     //   // 或者安装 mathjax-full
     //   type: "mathjax",
-    // },
-
-    // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
-    // revealjs: {
-    //   plugins: ["highlight", "math", "search", "notes", "zoom"],
     // },
 
     // 在启用之前安装 chart.js
@@ -123,17 +126,9 @@ export default hopeTheme({
     sitemap: true,
     photoSwipe: true,
     feed: true,
-    revealsjs: {
-      themes: "auto",
-      layout: "SlidePage",
-      plugins: [
-        "highlight",
-        "math",
-        "search",
-        "notes",
-        "zoom",
-      ],
-    },
+    search: true,
+    readingTime: true,
+
     // 评论模块
     comment: {
       provider: "Waline",
@@ -146,21 +141,21 @@ export default hopeTheme({
       ],
     },
     // 搜索模块
-    docsearch: {
-      appId: 'J8AAAZLZZ7',
-      apiKey: '94c1d72ea8e1533fc67c3e7244c7e196',
-      indexName: 'daoyi-wiki',
-      placeholder: '搜索文档',
-      translations: {
-        button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
-        modal: {
-          searchBox: { resetButtonTitle: '清除', cancelButtonText: '取消' },
-          errorScreen: { titleText: '无法获取结果', helpText: '请检查网络连接' },
-          noResultsScreen: { noResultsText: '无搜索结果', suggestedQueryText: '尝试其他关键词' },
-          footer: { selectText: '选择', navigateText: '切换', closeText: '关闭' }
-        }
-      }
-    },
+    //docsearch: {
+    //  appId: 'J8AAAZLZZ7',
+    //  apiKey: '94c1d72ea8e1533fc67c3e7244c7e196',
+    //  indexName: 'daoyi-wiki',
+    //  placeholder: '搜索文档',
+    //  translations: {
+    //    button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
+    //    modal: {
+    //      searchBox: { resetButtonTitle: '清除', cancelButtonText: '取消' },
+    //      errorScreen: { titleText: '无法获取结果', helpText: '请检查网络连接' },
+    //      noResultsScreen: { noResultsText: '无搜索结果', suggestedQueryText: '尝试其他关键词' },
+    //      footer: { selectText: '选择', navigateText: '切换', closeText: '关闭' }
+    //    }
+    //  }
+    //},
 
     components: {
       components: [
@@ -168,11 +163,11 @@ export default hopeTheme({
         "VidStack",
         "ArtPlayer",
         "BiliBili",
-        "PDF",
         "Share",
         "Badge",
         "VPCard",
-        "VPBanner"
+        "VPBanner",
+        { name: "PDF", pdfjs: "/pdfjs/build/" },
       ],
     },
 

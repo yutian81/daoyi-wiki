@@ -1,11 +1,20 @@
 ---
-title: Markdown 展示
+-updated: 2025-06-03
+title: ""
+index: true
+cover: 
 icon: fa6-brands:markdown
 order: 2
-category:
-  - 使用说明
+author: 
+date: 2025-06-02
 tag:
   - Markdown
+category:
+  - 使用说明
+sticky: 
+star: 
+footer: 
+copyright: 
 ---
 
 VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。
@@ -30,6 +39,7 @@ Frontmatter 是 VuePress 中很重要的一个概念，请阅读 [Frontmatter �
 
 ## Markdown 扩展
 
+
 VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来解析 Markdown 内容，因此可以借助于 markdown-it 插件来实现 [语法扩展](https://github.com/markdown-it/markdown-it#syntax-extensions) 。
 
 ### VuePress 扩展
@@ -42,33 +52,162 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 
 通过 VuePress 插件，主题扩展了更多 Markdown 语法，提供更加丰富的写作功能。
 
-#### 选项卡
+#### 单选项卡
 
+```
+<!-- 👇 这里，fruit 将用作 id，它是可选的,所有具有相同 id 的选项卡将共享相同的切换事件 -->
 ::: tabs#fruit
-
-@tab apple
-
-Apple
-
-@tab banana
-
-Banana
-
-@tab orange
-
-Orange
-
+<!-- 选项卡内容 -->
 :::
+```
+
+#### 多选项卡
+
+```
+::: tabs
+@tab 标题 1
+<!-- tab 1 内容 -->
+<!-- 👇 这里，tab 2 的标题将是 “标题 2”，并且它会使用 “值 2” 作为选项卡的值-->
+
+@tab 标题 2#值 2
+<!-- tab 2 内容 -->
+<!-- 👇 tab 3 将会被默认激活 -->
+
+@tab:active 标题 3
+<!-- tab 3 内容 -->
+:::
+```
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/tabs.html)
 
 #### 脚注
 
-此文字有脚注[^first].
+基本语法
 
-[^first]: 这是脚注内容
+```
+脚注 1 链接[^first]。
+脚注 2 链接[^second]。
+行内的脚注^[行内脚注文本] 定义。
+重复的页脚定义[^second]。
+
+[^first]: 脚注 **可以包含特殊标记** 也可以由多个段落组成
+[^second]: 脚注文字。
+```
+
+![image.png](https://pan.811520.xyz/2025-06/1748944227-image.webp)
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/footnote.html)
+
+#### Revealjs---- 幻灯片
+
+- 安装插件
+
+```bash
+pnpm add -D @vuepress/plugin-revealjs@next
+```
+
+- 主题配置 (顶层，非 plugins)
+
+```js
+    revealjs: {
+      themes: ["auto"],
+      plugins: ["highlight","math","search","notes","zoom"],
+    },
+```
+
+- 文档语法
+
+```html
+@slidestart
+
+## 幻灯片标题
+一个拥有文字和 [链接](https://mister-hope.com) 的段落
+
+---
+
+## 代码高亮
+代码高亮示例代码
+
+@slideend
+```
+
+> 默认情况下，插件会注册一个 `SlidePage` 布局来供你渲染 " 幻灯片页 "。  
+在使用此布局的页面中，你应该只包含单个幻灯片语法，不包含其他内容，以避免渲染问题:
+
+```md
+---
+layout: SlidePage
+---
+
+@slidestart
+
+<!-- 此处是幻灯片内容 -->
+
+@slideend
+```
+
+>你可以通过插件选项中的 `layout` 来自定义此行为，比如使用 `false` 来禁用它或填入其他布局名称。
+
+#### 提示容器
+
+基本容器
+
+```
+::: important
+重要容器。
+:::
+```
+
+有代码和链接的容器
+
+```
+::: important 自定义标题
+一个有 `代码` 和 [链接](#演示) 的重要容器。
+代码块或链接
+:::
+```
+
+支持的样式
+- important
+- info
+- note
+- tip
+- warning
+- caution
+- details ---- 折叠内容
+
+#### 警告样式
+
+```
+> [!important]
+> 重要文字
+
+> [!info]
+> 信息文字
+
+> [!tip]
+> 提示文字
+
+> [!warning]
+> 注意文字
+
+> [!caution]
+> 警告文字
+
+> [!note]
+> 注释文字
+```
+
+#### 上下标
+
+- 使用`^ ^`进行上角标标注。
+- 使用`~ ~`进行下角标标注。
+- 你可以使用 `\` 来转义 `^` 和 `~`:
+
+```
+19^th^ - H~2~O
+H\~2~O 19\^th^
+```
 
 #### 导入文件
 
@@ -221,7 +360,7 @@ VuePress Theme Hope !!十分强大!!.
 
 #### MarkMap
 
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
+<iframe s  rc="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/markmap.html)
 
@@ -243,7 +382,7 @@ alt 成功情况
 else 某种失败情况
 
     Bob -> Alice: 认证失败
-    group 我自己的标签
+      group 我自己的标签
     Alice -> Log : 开始记录攻击日志
         loop 1000次
             Alice -> Bob: DNS 攻击
@@ -309,6 +448,8 @@ npm i -D vuepress-theme-hope
 <iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/sandpack.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/sandpack.html)
+
+[^1]: 这是脚注内容
 
 #### Vue 交互演示
 
