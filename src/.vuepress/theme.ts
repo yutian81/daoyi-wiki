@@ -14,12 +14,8 @@ export default hopeTheme({
   docsDir: "src",
   fullscreen: true,
   print: true,
-
-  // 导航栏
-  navbar,
-  // 侧边栏
-  sidebar,
-  // 页脚
+  navbar,  // 导航栏
+  sidebar,  // 侧边栏
   footer: '基于 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 框架构建 | 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题',
   displayFooter: true,
 
@@ -54,11 +50,13 @@ export default hopeTheme({
     component: true,
     demo: true,
     figure: true,
-    gfm: true,
     imgLazyload: true,
     imgSize: true,
+    imgMark: true,
+    gfm: true,
     include: true,
     mark: true,
+    footnote: true,
     plantuml: true,
     spoiler: true,
     stylize: [
@@ -80,7 +78,6 @@ export default hopeTheme({
     tasklist: true,
     alert: true,
     vPre: true,
-    linksCheck: true,
 
     // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
     revealjs: {
@@ -88,37 +85,19 @@ export default hopeTheme({
       plugins: ["highlight","math","search","notes","zoom"],
     },
 
-    // 取消注释它们如果你需要 TeX 支持
     // math: {
-    //   // 启用前安装 katex
-    //   type: "katex",
-    //   // 或者安装 mathjax-full
-    //   type: "mathjax",
+    //   type: "katex", // 启用前安装 katex
+    //   type: "mathjax",  // 或者安装 mathjax-full
     // },
-
-    // 在启用之前安装 chart.js
-    // chartjs: true,
-
-    // insert component easily
-
-    // 在启用之前安装 echarts
-    // echarts: true,
-
-    // 在启用之前安装 flowchart.ts
-    // flowchart: true,
-
-    // 在启用之前安装 mermaid
-    // mermaid: true,
-
+    // chartjs: true, //在启用之前安装 chart.js
+    // echarts: true, //在启用之前安装 echarts
+    // flowchart: true, //在启用之前安装 flowchart.ts
+    // mermaid: true, //在启用之前安装 mermaid
     // playground: {
-    //   presets: ["ts", "vue"],
+    //   presets: ["ts", "vue"],
     // },
-
-    // 在启用之前安装 @vue/repl
-    // vuePlayground: true,
-
-    // 在启用之前安装 sandpack-vue3
-    // sandpack: true,
+    // vuePlayground: true, // 在启用之前安装 @vue/repl
+    // sandpack: true, // 在启用之前安装 sandpack-vue3
   },
 
   // 在这里配置主题提供的插件

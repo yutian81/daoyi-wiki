@@ -6,15 +6,18 @@ icon:
 order: 1
 author: 
 date: 2025-06-03
-updated: 2025-06-03
-tag: []
-category:
+tag:
+  - 部署
   - 视频
-  - 知识
+  - 样式
+  - 音频
+  - 语法
+category:
+  - 部署
+  - 视频
+  - 音频
 sticky: 
 star: 
-footer: 
-copyright: 
 ---
 
 # 视频播放器

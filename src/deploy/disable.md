@@ -6,10 +6,8 @@ category:
   - 使用说明
 tag:
   - 禁用
-
 navbar: false
 sidebar: false
-
 breadcrumb: false
 pageInfo: false
 contributors: false
@@ -19,7 +17,6 @@ prev: false
 next: false
 comment: false
 footer: false
-
 backtotop: false
 ---
 

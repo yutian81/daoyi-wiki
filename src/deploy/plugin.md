@@ -6,13 +6,18 @@ icon:
 order: 4
 author: 
 date: 2025-06-03
-updated: 2025-06-03
-tag: []
-category: []
+tag:
+  - 部署
+  - 插件
+  - 样式
+  - 语法
+  - 组件
+category:
+  - 部署
+  - 插件
+  - 组件
 sticky: 
 star: 
-footer: 
-copyright: 
 ---
 
 # 组件与插件
@@ -37,7 +42,7 @@ copyright:
     },
 ```
 
-### SiteInfo ---- 站点卡片
+### SiteInfo---- 站点卡片
 
 #### 基础样式
 
@@ -75,6 +80,18 @@ copyright:
   background="rgba(253, 230, 138, 0.15)"
 />
 ```
+
+````
+```component VPCard
+title: Mr.Hope
+desc: Where there is light, there is hope
+logo: https://mister-hope.com/logo.svg
+link: https://mister-hope.com
+background: rgba(253, 230, 138, 0.15)
+```
+````
+
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/component/grammar.html)
 
 #### 其他配置项
 

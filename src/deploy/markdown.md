@@ -7,13 +7,14 @@ order: 2
 author: 
 date: 2025-06-02
 tag:
-  - Markdown
+  - 样式
+  - 语法
+  - MD
 category:
+  - 部署
   - 使用说明
 sticky: 
 star: 
-footer: 
-copyright: 
 ---
 
 # Markdown
@@ -32,10 +33,8 @@ VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻�
 
 VuePress 通过 Frontmatter 为每个 Markdown 页面引入配置。
 
-::: important Frontmatter
-
-Frontmatter 是 VuePress 中很重要的一个概念，请阅读 [Frontmatter 介绍](https://theme-hope.vuejs.press/zh/cookbook/vuepress/page.html#front-matter) 了解详情。
-
+::: important Frontmatter  
+Frontmatter 是 VuePress 中很重要的一个概念，请阅读 [Frontmatter 介绍](https://theme-hope.vuejs.press/zh/cookbook/vuepress/page.html#front-matter) 了解详情。  
 :::
 
 ## Markdown 扩展
@@ -48,11 +47,68 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 
 关于这些扩展，请阅读 [VuePress 中的 Markdown 扩展](https://theme-hope.vuejs.press/zh/cookbook/vuepress/markdown.html)。
 
-### 主题扩展
+### Theme Hope 主题扩展
 
 通过 VuePress 插件，主题扩展了更多 Markdown 语法，提供更加丰富的写作功能。
 
-#### 单选项卡
+```js
+  markdown: {
+    align: true,
+    attrs: true,
+    codeTabs: true,
+    component: true,
+    demo: true,
+    figure: true,
+    gfm: true,
+    imgLazyload: true,
+    imgSize: true,
+    include: true,
+    mark: true,
+    plantuml: true,
+    spoiler: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+        },
+      },
+    ],
+    sub: true,
+    sup: true,
+    tabs: true,
+    tasklist: true,
+    alert: true,
+    vPre: true,
+
+    // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
+    revealjs: {
+      themes: ["auto"],
+      plugins: ["highlight","math","search","notes","zoom"],
+    },
+
+    // math: {
+    //   type: "katex", // 启用前安装 katex
+    //   type: "mathjax",  // 或者安装 mathjax-full
+    // },
+    // chartjs: true, //在启用之前安装 chart.js
+    // echarts: true, //在启用之前安装 echarts
+    // flowchart: true, //在启用之前安装 flowchart.ts
+    // mermaid: true, //在启用之前安装 mermaid
+    // playground: {
+    //   presets: ["ts", "vue"],
+    // },
+    // vuePlayground: true, // 在启用之前安装 @vue/repl
+    // sandpack: true, // 在启用之前安装 sandpack-vue3
+  },
+```
+
+#### `tabs` 单选项卡
 
 ```
 <!-- 👇 这里，fruit 将用作 id，它是可选的,所有具有相同 id 的选项卡将共享相同的切换事件 -->
@@ -61,7 +117,7 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 :::
 ```
 
-#### 多选项卡
+#### `tabs` 多选项卡
 
 ```
 ::: tabs
@@ -80,7 +136,48 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/tabs.html)
 
-#### 脚注
+#### `codeTabs` 代码块
+
+````
+安装 VuePress:
+::: code-tabs#shell
+
+@tab pnpm
+```
+bash pnpm add -D vuepress
+```
+@tab yarn
+```
+bash yarn add -D vuepress
+```
+@tab:active npm
+```
+bash npm i -D vuepress
+```
+
+:::
+
+安装 VuePress Theme Hope:
+::: code-tabs#shell
+
+@tab pnpm
+```
+bash pnpm add -D vuepress-theme-hope
+```
+@tab yarn
+```
+bash yarn add -D vuepress-theme-hope
+```
+@tab:active npm
+```bash npm i -D vuepress-theme-hope
+```
+
+:::
+````
+
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/code-tabs.html)
+
+#### `footnote` 脚注
 
 基本语法
 
@@ -99,7 +196,7 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/footnote.html)
 
-#### Revealjs---- 幻灯片
+#### `revealjs` 幻灯片
 
 - 安装插件
 
@@ -107,7 +204,7 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 pnpm add -D @vuepress/plugin-revealjs@next
 ```
 
-- 主题配置 (顶层，非 plugins)
+- 主题配置 (markdown 子项，非 plugins)
 
 ```js
     revealjs: {
@@ -116,7 +213,7 @@ pnpm add -D @vuepress/plugin-revealjs@next
     },
 ```
 
-- 文档语法
+- 语法
 
 ```html
 @slidestart
@@ -133,7 +230,7 @@ pnpm add -D @vuepress/plugin-revealjs@next
 ```
 
 > 默认情况下，插件会注册一个 `SlidePage` 布局来供你渲染 " 幻灯片页 "。  
-在使用此布局的页面中，你应该只包含单个幻灯片语法，不包含其他内容，以避免渲染问题:
+> 在使用此布局的页面中，你应该只包含单个幻灯片语法，不包含其他内容，以避免渲染问题:
 
 ```md
 ---
@@ -149,27 +246,53 @@ layout: SlidePage
 
 > 你可以通过插件选项中的 `layout` 来自定义此行为，比如使用 `false` 来禁用它或填入其他布局名称。
 
-#### 提示容器
-
-基本容器
+#### `vPre` 提示容器
 
 ```
-::: important
-重要容器。
+::: v-pre
+安全的在 Markdown 中使用 {{ variable }}。
 :::
 ```
 
-有代码和链接的容器
+````
+::: info 自定义标题
+信息容器，包含 `代码` 与 [链接](#提示容器)。
+```js
+const a = 1;
+```
+:::
+````
 
 ```
-::: important 自定义标题
-一个有 `代码` 和 [链接](#演示) 的重要容器。
-代码块或链接
+::: tip 自定义标题
+提示容器
 :::
 ```
+
+```
+::: warning 自定义标题
+警告容器
+:::
+```
+
+```
+::: caution 自定义标题
+危险容器
+:::
+```
+
+```
+::: details 自定义标题
+详情容器
+:::
+```
+
+- [GitHub 警示](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/alert.html)
+- [提示框](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/hint.html)
 
 支持的样式
 
+- v-pre
 - important
 - info
 - note
@@ -178,7 +301,7 @@ layout: SlidePage
 - caution
 - details ---- 折叠内容
 
-#### 警告样式
+#### `alert` 警告样式
 
 ```
 > [!important]
@@ -200,7 +323,7 @@ layout: SlidePage
 > 注释文字
 ```
 
-#### 上下标
+#### `sub sup` 上下角标
 
 - 使用 `^ ^` 进行上角标标注。
 - 使用 `~ ~` 进行下角标标注。
@@ -211,13 +334,51 @@ layout: SlidePage
 H\~2~O 19\^th^
 ```
 
-#### 导入文件
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/sup-sub.html)
+
+#### `include` 导入文件
 
 <!-- @include: ./README.md{11-17} -->
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/include.html)
 
-#### TeX 语法
+#### `component` 组件
+
+你可以使用 component 代码块来在 Markdown 中添加组件
+
+基本语法
+
+````md
+```component 组件名称
+# 组件数据
+```
+````
+
+快速使用 vcard 组件
+
+````
+```component VPCard
+title: Mr.Hope
+desc: Where there is light, there is hope
+logo: https://mister-hope.com/logo.svg
+link: https://mister-hope.com
+background: rgba(253, 230, 138, 0.15)
+```
+````
+
+上方的代码块和下方等价:
+
+```md
+<VPCard
+  title="Mr.Hope"
+  desc="Where there is light, there is hope"
+  logo="https://mister-hope.com/logo.svg"
+  link="https://mister-hope.com"
+  background="rgba(253, 230, 138, 0.15)"
+/>
+```
+
+#### TeX 公式语法
 
 $$
 \frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right)
@@ -226,123 +387,121 @@ $$
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/math.html)
 
-#### 任务列表
+#### `tasklist` 任务列表
 
-- [x] 计划 1
-- [ ] 计划 2
+```
+- [] 计划 1
+- [x] 计划 2
+```
 
 [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/tasklist.html)
 
-### 图片增强
+#### `imgLazyload imgSize imgMark` 图片增强
 
-支持为图片设置颜色模式和大小。
+图片懒加载
+
+此功能通过原生 HTML5 启用图片的延迟加载，因此仅在 [支持 loading=lazy 属性](https://caniuse.com/loading-lazy-attr) 的浏览器生效。
+
+图片 ID 标记示例
+
+```
+<ColorModeSwitch /> 👈 尝试切换主题
+
+![GitHub Light](/assets/image/github-light.svg#dark)
+![GitHub Dark](/assets/image/github-dark.svg#light)
+```
+
+图片尺寸
+
+```
+![替代文字 =200x300](/example.png)
+![替代文字 =200x](/example.jpg "标题")
+![替代文字 =x300](/example.bmp)
+```
+
+```
+![替代文字|200x200](/example.png)
+![替代文字|200x0](/example.jpg)
+![替代文字|0x300](/example.bmp)
+```
+
+图片描述
+
+```
+![VuePress Hope 图标](/favicon.ico)
+[![VuePress Hope 图标](/favicon.ico)](https://theme-hope.vuejs.press/)
+![VuePress Hope 图标](/favicon.ico "VuePress Hope 图标")
+[![VuePress 图标](/favicon.ico "VuePress Hope 图标")](https://theme-hope.vuejs.press/)
+![VuePress Hope 图标](https://theme-hope-assets.vuejs.press/logo.svg "VuePress Hope 图标" =300x300)
+```
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/image.html)
 
-#### 上下角标
+#### `align` 对齐
 
-19^th^ H~2~O
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/sup-sub.html)
-
-#### 组件
-
-```component VPCard
-title: Mr.Hope
-desc: Where there is light, there is hope
-logo: https://mister-hope.com/logo.svg
-link: https://mister-hope.com
-background: rgba(253, 230, 138, 0.15)
 ```
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/component/grammar.html)
-
-#### 提示容器
-
-::: v-pre
-
-安全的在 Markdown 中使用 {{ variable }}。
-
-:::
-
-::: info 自定义标题
-
-信息容器，包含 `代码` 与 [链接](#提示容器)。
-
-```js
-const a = 1;
-```
-
-:::
-
-::: tip 自定义标题
-
-提示容器
-
-:::
-
-::: warning 自定义标题
-
-警告容器
-
-:::
-
-::: caution 自定义标题
-
-危险容器
-
-:::
-
-::: details 自定义标题
-
-详情容器
-
-:::
-
-- [GitHub 警示](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/alert.html)
-- [提示框](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/hint.html)
-
-#### 自定义对齐
-
 ::: center
-
 我是居中的
-
 :::
+```
 
+```
 ::: right
-
 我在右对齐
-
 :::
+```
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/align.html)
 
-#### 属性支持
+#### `attrs` 属性
 
-一个拥有 ID 的 **单词**{#word}。
+你可以使用语法 `{attrs}` 来为 Markdown 元素添加属性。
+
+比如，如果你想要一个 id 为 say-hello-world，文字为 Hello World 的二级标题，你可以使用:
+
+```md
+## Hello World {#say-hello-world}
+```
+
+如果你想要一个有 full-width Class 的图片，你可以使用:
+
+```md
+![img](link/to/image.png) {.full-width}
+```
+
+行内元素
+
+```
+包含 `行内代码`{.inline-code} 和 ![favicon](/favicon.ico){.image} 的文字，也支持 _强调_{.inline-emphasis} 和 **加粗**{.inline-bold}。
+```
+
+块级元素
+
+```
+块级元素 {.block}
+```
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/attrs.html)
 
-#### 标记
+#### `mark` 标记
 
-你可以标记 ==重要的内容== 。
+`你可以标记 ==重要的内容== 。`
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/mark.html)
 
-#### 剧透
+#### `spoiler` 剧透
 
 VuePress Theme Hope !!十分强大!!.
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/spoiler.html)
 
-#### 样式化
+#### `stylize` 样式化
 
 向 Mr.Hope 捐赠一杯咖啡。 _Recommended_
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/stylize.html)
 
-#### 图表
+#### `figure` 图表
 
 <iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/chartjs.html" width="100%" height="450"/>
 
@@ -372,17 +531,23 @@ VuePress Theme Hope !!十分强大!!.
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/mermaid.html)
 
-#### PlantUML
+#### Plantuml 序列图
 
-@startuml  
+```
+@startuml
+内容
+@enduml
+```
+
+示例
+
+```
+@startuml
+
 Alice -> Bob: 认证请求
-
 alt 成功情况
-
     Bob -> Alice: 认证接受
-
 else 某种失败情况
-
     Bob -> Alice: 认证失败
       group 我自己的标签
     Alice -> Log : 开始记录攻击日志
@@ -391,43 +556,14 @@ else 某种失败情况
         end
     Alice -> Log : 结束记录攻击日志
     end
-
 else 另一种失败
-
     Bob -> Alice: 请重复
+end
 
-end  
 @enduml
+```
 
 - [View Detail](https://theme-hope.vuejs.press/zh/guide/markdown/chart/plantuml.html)
-
-#### 代码块
-
-::: code-tabs
-
-@tab pnpm
-
-```bash
-pnpm add -D vuepress-theme-hope
-```
-
-@tab yarn
-
-```bash
-yarn add -D vuepress-theme-hope
-```
-
-@tab:active npm
-
-```bash
-npm i -D vuepress-theme-hope
-```
-
-:::
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/code-tabs.html)
-
-#### 代码演示
 
 <iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/code-demo.html" width="100%" height="450"/>
 
