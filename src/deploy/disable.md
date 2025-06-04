@@ -3,7 +3,7 @@ title: 布局与功能禁用
 icon: gears
 order: 4
 category:
-  - 使用说明
+  - 说明
 tag:
   - 禁用
 navbar: false

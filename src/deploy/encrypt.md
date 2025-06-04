@@ -1,7 +1,8 @@
 ---
+title: 加密
 icon: lock
 category:
-  - 使用说明
+  - 说明
 tag:
   - 加密
 ---
