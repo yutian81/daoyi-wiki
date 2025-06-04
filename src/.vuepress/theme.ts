@@ -44,7 +44,6 @@ export default hopeTheme({
 
   // 此处开启了很多功能用于演示，你应仅保留用到的功能。
   markdown: {
-    lineNumbers: true,
     align: true,
     attrs: true,
     codeTabs: true,
