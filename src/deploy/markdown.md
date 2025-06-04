@@ -12,7 +12,7 @@ tag:
   - MD
 category:
   - 部署
-  - 使用说明
+  - MD
 sticky: 
 star: 
 ---
@@ -68,13 +68,13 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
     spoiler: true,
     stylize: [
       {
-        matcher: "Recommended",
+        matcher: "推荐",
         replacer: ({ tag }) => {
           if (tag === "em")
             return {
               tag: "Badge",
-              attrs: { type: "tip" },
-              content: "Recommended",
+              attrs: { type: "tip", vertical: "middle" },
+              content: "推荐",
             };
         },
       },
@@ -380,10 +380,14 @@ background: rgba(253, 230, 138, 0.15)
 
 #### TeX 公式语法
 
+用 `$$` 前后包裹，需要先安装 `katex` 或 `mathjax-full` 公式插件
+
+```
 $$
 \frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right)
 = \left(\frac {y^{\omega}} {\omega}\right) \left\{(\log y)^r + \sum_{i=1}^r \frac {(-1)^i r \cdots (r-i+1) (\log y)^{r-i}} {\omega^i} \right\}
 $$
+```
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/math.html)
 
@@ -491,13 +495,60 @@ $$
 
 #### `spoiler` 剧透
 
+使用 `!! !!` 标记需要隐藏的文字。请注意两边需要有空格。
+
+```
 VuePress Theme Hope !!十分强大!!.
+```
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/spoiler.html)
 
 #### `stylize` 样式化
 
-向 Mr.Hope 捐赠一杯咖啡。 _Recommended_
+`stylize` 接收一个数组，其中每个元素接受 2 个选项：
+
+- `matcher`：应为 `string` 或 `RegExp`。
+- `replacer`: 自定义匹配标记的函数
+
+例如：
+
+```js
+    stylize: [
+      {
+        matcher: "推荐",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip", vertical: "middle" },
+              content: "推荐",
+            };
+        }
+      },
+      {
+        matcher: "重要",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "danger", vertical: "middle" },
+              content: "重要",
+            };
+        }
+      },
+      {
+        matcher: "注意",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "warning", vertical: "middle" },
+              content: "注意",
+            };
+        }
+      },
+    ],
+```
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/stylize.html)
 

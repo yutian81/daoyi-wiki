@@ -2,7 +2,8 @@
 title: 加密
 icon: lock
 category:
-  - 说明
+  - 部署
+  - 加密
 tag:
   - 加密
 ---

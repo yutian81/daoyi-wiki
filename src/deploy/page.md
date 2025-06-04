@@ -6,10 +6,11 @@ order: 3
 author: Ms.Hope
 date: 2020-01-01
 category:
-  - 使用说明
+  - 部署
+  - 页面
 tag:
-  - 页面配置
-  - 使用指南
+  - 页面
+  - 配置
 sticky: true
 star: true
 footer: 这是测试显示的页脚

@@ -49,6 +49,12 @@ export default hopeTheme({
     codeTabs: true,
     component: true,
     demo: true,
+    sub: true,
+    sup: true,
+    tabs: true,
+    tasklist: true,
+    alert: true,
+    vPre: true,
     figure: true,
     imgLazyload: true,
     imgSize: true,
@@ -61,23 +67,39 @@ export default hopeTheme({
     spoiler: true,
     stylize: [
       {
-        matcher: "Recommended",
+        matcher: "推荐",
         replacer: ({ tag }) => {
           if (tag === "em")
             return {
               tag: "Badge",
-              attrs: { type: "tip" },
-              content: "Recommended",
+              attrs: { type: "tip", vertical: "middle" },
+              content: "推荐",
             };
-        },
+        }
+      },
+      {
+        matcher: "重要",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "danger", vertical: "middle" },
+              content: "重要",
+            };
+        }
+      },
+      {
+        matcher: "注意",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "warning", vertical: "middle" },
+              content: "注意",
+            };
+        }
       },
     ],
-    sub: true,
-    sup: true,
-    tabs: true,
-    tasklist: true,
-    alert: true,
-    vPre: true,
 
     // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
     revealjs: {
@@ -143,11 +165,14 @@ export default hopeTheme({
         "ArtPlayer",
         "BiliBili",
         "Share",
+        "PDF",
         "Badge",
         "VPCard",
         "VPBanner",
-        { name: "PDF", pdfjs: "/pdfjs/build/" },
       ],
+      PDF: {
+        pdfjs: "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.31/build/"
+      }
     },
 
     icon: {
