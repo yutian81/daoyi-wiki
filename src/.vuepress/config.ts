@@ -8,6 +8,10 @@ export default defineUserConfig({
   title: "道怡地产",
   description: "道怡地产团队知识库——地产营销的百科全书",
 
+  markdown: {
+    lineNumbers: true, // 启用代码块行号
+  },
+
   theme,
 
   head: [
