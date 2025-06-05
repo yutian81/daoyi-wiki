@@ -101,6 +101,18 @@ export default hopeTheme({
       },
     ],
 
+    // MD高亮增强
+    highlighter: {
+      type: "prismjs",
+      themes: {
+        light: "one-light",
+        dark: "one-dark"
+      },
+      lineNumbers: true,
+      collapsedLines: true,
+      codeBlockTitle: true,
+    },
+
     // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
     revealjs: {
       themes: ["auto"],

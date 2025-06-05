@@ -51,7 +51,7 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 
 通过 VuePress 插件，主题扩展了更多 Markdown 语法，提供更加丰富的写作功能。
 
-```js
+```js title=".vitepress/theme.ts"
   markdown: {
     align: true,
     attrs: true,
