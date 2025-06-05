@@ -52,60 +52,98 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 通过 VuePress 插件，主题扩展了更多 Markdown 语法，提供更加丰富的写作功能。
 
 ```js title=".vitepress/theme.ts"
-  markdown: {
-    align: true,
-    attrs: true,
-    codeTabs: true,
-    component: true,
-    demo: true,
-    figure: true,
-    gfm: true,
-    imgLazyload: true,
-    imgSize: true,
-    include: true,
-    mark: true,
-    plantuml: true,
-    spoiler: true,
-    stylize: [
-      {
-        matcher: "推荐",
-        replacer: ({ tag }) => {
-          if (tag === "em")
-            return {
-              tag: "Badge",
-              attrs: { type: "tip", vertical: "middle" },
-              content: "推荐",
-            };
-        },
-      },
-    ],
-    sub: true,
-    sup: true,
-    tabs: true,
-    tasklist: true,
-    alert: true,
-    vPre: true,
+  markdown: {
+    align: true,
+    attrs: true,
+    codeTabs: true,
+    component: true,
+    demo: true,
+    sub: true,
+    sup: true,
+    tabs: true,
+    linkify: true,
+    tasklist: true,
+    hint: true,
+    alert: true,
+    vPre: true,
+    figure: true,
+    imgLazyload: true,
+    imgSize: true,
+    imgMark: true,
+    gfm: true,
+    include: true,
+    mark: true,
+    footnote: true,
+    plantuml: true,
+    spoiler: true,
+    stylize: [
+      {
+        matcher: "推荐",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip", vertical: "middle" },
+              content: "推荐",
+            };
+        }
+      },
+      {
+        matcher: "重要",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "danger", vertical: "middle" },
+              content: "重要",
+            };
+        }
+      },
+      {
+        matcher: "注意",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "warning", vertical: "middle" },
+              content: "注意",
+            };
+        }
+      },
+    ],
 
-    // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
-    revealjs: {
-      themes: ["auto"],
-      plugins: ["highlight","math","search","notes","zoom"],
-    },
+    // MD高亮增强 先安装 @vuepress/plugin-prismjs
+    highlighter: {
+      type: "prismjs",
+      themes: {
+        light: "one-light",
+        dark: "one-dark"
+      },
+      lineNumbers: true,
+      collapsedLines: true,
+      codeBlockTitle: true,
+    },
 
-    // math: {
-    //   type: "katex", // 启用前安装 katex
-    //   type: "mathjax",  // 或者安装 mathjax-full
-    // },
-    // chartjs: true, //在启用之前安装 chart.js
-    // echarts: true, //在启用之前安装 echarts
-    // flowchart: true, //在启用之前安装 flowchart.ts
-    // mermaid: true, //在启用之前安装 mermaid
-    // playground: {
-    //   presets: ["ts", "vue"],
-    // },
-    // vuePlayground: true, // 在启用之前安装 @vue/repl
-    // sandpack: true, // 在启用之前安装 sandpack-vue3
-  },
+    // 启用幻灯片前先安装 @vuepress/plugin-revealjs
+    revealjs: {
+      themes: ["auto"],
+      plugins: ["highlight","math","search","notes","zoom"],
+    },
+
+    // math: {
+    //   type: "katex", // 启用前安装 katex
+    //   type: "mathjax",  // 或者安装 mathjax-full
+    // },
+    // chartjs: true, //在启用之前安装 chart.js
+    // echarts: true, //在启用之前安装 echarts
+    // flowchart: true, //在启用之前安装 flowchart.ts
+    // mermaid: true, //在启用之前安装 mermaid
+    // playground: {
+    //   presets: ["ts", "vue"],
+    // },
+    // vuePlayground: true, // 在启用之前安装 @vue/repl
+    // sandpack: true, // 在启用之前安装 sandpack-vue3
+  },
 ```
 
 #### `tabs` 单选项卡
@@ -246,13 +284,17 @@ layout: SlidePage
 
 > 你可以通过插件选项中的 `layout` 来自定义此行为，比如使用 `false` 来禁用它或填入其他布局名称。
 
-#### `vPre` 提示容器
+#### `vPre` 模板
 
 ```
 ::: v-pre
 安全的在 Markdown 中使用 {{ variable }}。
 :::
 ```
+
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/others.html#v-pre)
+
+#### `hint` 提示容器
 
 ````
 ::: info 自定义标题
@@ -552,11 +594,44 @@ VuePress Theme Hope !!十分强大!!.
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/stylize.html)
 
-#### `figure` 图表
+#### `figure` 图片展示
 
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/chartjs.html" width="100%" height="450"/>
+你可能希望为图像添加描述，并将其单独展示在上下文中，在这种情况下，你应该启用此功能将图片渲染为 <figure>。
 
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/chartjs.html)
+这样当你单独将图片至于一行 (也可同时嵌套链接)，图像将显示为 <figure> ，标题或图片替代文字将显示为 <figcaption>。
+
+自动识别
+
+```md
+![alt文字 =300x300](https://theme-hope-assets.vuejs.press/logo.svg)
+![alt文字 =300x0](https://theme-hope-assets.vuejs.press/logo.svg "图片标题")
+```
+
+支持 obsidian 语法
+```md
+![alt文字|200x200](/example.png)
+![alt文字|200x0](/example.jpg "0 表示自动比例")
+```
+
+多图组合并带预览功能
+```md
+::: figure preview
+![alt文字|200x200](/example.png)
+![alt文字|200x0](/example.jpg "0 表示自动比例")
+带预览功能的多图组合标题
+:::
+```
+
+支持 imgMark 的高级组合语法
+```md
+::: figure preview
+![夜景图片](/scenery1.jpg#dark "只在夜间模式显示")
+![日景图片](/scenery2.jpg#light "只在白天模式显示")
+旅行摄影集（点击图片可放大查看）
+:::
+```
+
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/image.html#图片展示)
 
 #### ECharts
 

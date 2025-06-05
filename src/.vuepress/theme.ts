@@ -52,13 +52,16 @@ export default hopeTheme({
     sub: true,
     sup: true,
     tabs: true,
+    linkify: true,
     tasklist: true,
+    hint: true,
     alert: true,
     vPre: true,
     figure: true,
     imgLazyload: true,
     imgSize: true,
     imgMark: true,
+    obsidianImgSize: true,
     gfm: true,
     include: true,
     mark: true,
@@ -101,7 +104,7 @@ export default hopeTheme({
       },
     ],
 
-    // MD高亮增强
+    // MD高亮增强 先安装 @vuepress/plugin-prismjs
     highlighter: {
       type: "prismjs",
       themes: {
