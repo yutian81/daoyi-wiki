@@ -440,48 +440,7 @@ $$
 - [x] 计划 2
 ```
 
-[查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/tasklist.html)
-
-#### `imgLazyload imgSize imgMark` 图片增强
-
-图片懒加载
-
-此功能通过原生 HTML5 启用图片的延迟加载，因此仅在 [支持 loading=lazy 属性](https://caniuse.com/loading-lazy-attr) 的浏览器生效。
-
-图片 ID 标记示例
-
-```
-<ColorModeSwitch /> 👈 尝试切换主题
-
-![GitHub Light](/assets/image/github-light.svg#dark)
-![GitHub Dark](/assets/image/github-dark.svg#light)
-```
-
-图片尺寸
-
-```
-![替代文字 =200x300](/example.png)
-![替代文字 =200x](/example.jpg "标题")
-![替代文字 =x300](/example.bmp)
-```
-
-```
-![替代文字|200x200](/example.png)
-![替代文字|200x0](/example.jpg)
-![替代文字|0x300](/example.bmp)
-```
-
-图片描述
-
-```
-![VuePress Hope 图标](/favicon.ico)
-[![VuePress Hope 图标](/favicon.ico)](https://theme-hope.vuejs.press/)
-![VuePress Hope 图标](/favicon.ico "VuePress Hope 图标")
-[![VuePress 图标](/favicon.ico "VuePress Hope 图标")](https://theme-hope.vuejs.press/)
-![VuePress Hope 图标](https://theme-hope-assets.vuejs.press/logo.svg "VuePress Hope 图标" =300x300)
-```
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/image.html)
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/tasklist.html)
 
 #### `align` 对齐
 
@@ -622,6 +581,13 @@ VuePress Theme Hope !!十分强大!!.
 :::
 ```
 
+切换主题
+```
+<ColorModeSwitch /> 👈 切换主题
+![GitHub Light](/assets/image/github-light.svg#dark)
+![GitHub Dark](/assets/image/github-dark.svg#light)
+```
+
 支持 imgMark 的高级组合语法
 ```md
 ::: figure preview
@@ -631,7 +597,7 @@ VuePress Theme Hope !!十分强大!!.
 :::
 ```
 
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/image.html#图片展示)
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/image.html)
 
 #### ECharts
 
