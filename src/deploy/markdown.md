@@ -613,7 +613,7 @@ VuePress Theme Hope !!十分强大!!.
 
 #### MarkMap
 
-<iframe s rc="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/markmap.html)
 
