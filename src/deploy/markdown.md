@@ -601,25 +601,17 @@ VuePress Theme Hope !!十分强大!!.
 
 #### ECharts
 
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/echarts.html" width="100%" height="800"/>
-
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/echarts.html)
 
 #### 流程图
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/flowchart.html" width="100%" height="450"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/flowchart.html)
 
 #### MarkMap
 
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
-
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/markmap.html)
 
 #### Mermaid
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/mermaid.html" width="100%" height="620"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/mermaid.html)
 
@@ -657,36 +649,24 @@ end
 
 - [View Detail](https://theme-hope.vuejs.press/zh/guide/markdown/chart/plantuml.html)
 
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/code-demo.html" width="100%" height="450"/>
-
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/demo.html)
 
 #### 交互演示
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/playground.html" width="100%" height="480"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/playground.html)
 
 #### Kotlin 交互演示
 
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/kotlin-playground.html" width="100%" height="220"/>
-
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/kotlin-playground.html)
 
 #### Sandpack 交互演示
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/sandpack.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/sandpack.html)
 
 #### Vue 交互演示
 
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/vue-playground.html" width="100%" height="380"/>
-
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/vue-playground.html)
 
 #### 幻灯片
-
-<iframe src="https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html" width="100%" height="420"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/revealjs.html)
