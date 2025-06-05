@@ -113,7 +113,7 @@ export default hopeTheme({
       codeBlockTitle: true,
     },
 
-    // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
+    // 启用幻灯片前先安装 @vuepress/plugin-revealjs
     revealjs: {
       themes: ["auto"],
       plugins: ["highlight","math","search","notes","zoom"],
