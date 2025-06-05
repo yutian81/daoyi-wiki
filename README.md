@@ -71,7 +71,7 @@ pnpm docs:clean-dev
 - 构建命令：`pnpm docs:build`
 - 输出目录：`src/.vuepress/dist`
 
-## 项目配置
+## 项目配置说明
 
 ### 配置文件路径
 
@@ -90,7 +90,7 @@ src/.vuepress/config.ts/sidebar.ts
 
 VuePress 默认主题配置文件为 `src/.vuepress/config.ts`，默认主题比较简陋，功能不够强大，需要手动安装一系列依赖包并在主配置文件中设置。
 
-vuepress-theme-hope 主题则在默认主题基础上集成了一系列增强组件和插件，并将配置集中在`src/.vuepress/config.ts/theme.ts`文件中
+vuepress-theme-hope 主题则在默认主题基础上集成了一系列增强组件和插件，并将配置集中在`src/.vuepress/theme.ts`文件中
 
 - [VuePress Theme Hope 官方文档](https://vuepress-theme-hope.github.io/v2/)
 
@@ -100,5 +100,5 @@ vuepress-theme-hope 主题则在默认主题基础上集成了一系列增强组
 - [navbar.ts](https://github.com/yutian81/daoyi-wiki/blob/main/src/.vuepress/navbar.ts)
 - [sidebar.ts](https://github.com/yutian81/daoyi-wiki/blob/main/src/.vuepress/sidebar.ts)
 
-### 详细使用文档
+### 优化整理的使用文档
 [使用文档](https://wiki.811520.xyz/deploy/)
