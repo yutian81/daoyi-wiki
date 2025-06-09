@@ -1,6 +1,6 @@
 ---
 title: REITS
-index: false
+index: true
 cover: 
 icon: 
 order: 1
