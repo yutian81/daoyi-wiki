@@ -1,6 +1,6 @@
 ---
 title: PPP
-index: true
+index: false
 cover: 
 icon: 
 order: 2

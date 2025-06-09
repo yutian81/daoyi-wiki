@@ -1,6 +1,6 @@
 ---
 title: NPV
-index: true
+index: false
 cover: 
 icon: 
 order: 3

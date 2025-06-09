@@ -3,7 +3,7 @@ title: 金融类
 index: false
 cover: 
 icon: folder-open
-order: 3
+order: 2
 author: 
 date: 2025-06-06
 tag:

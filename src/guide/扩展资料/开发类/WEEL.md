@@ -1,6 +1,6 @@
 ---
 title: WEEL
-index: true
+index: false
 cover: 
 icon: 
 order: 4

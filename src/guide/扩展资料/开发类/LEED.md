@@ -1,6 +1,6 @@
 ---
 title: LEED
-index: true
+index: false
 cover: 
 icon: 
 order: 1
