@@ -2,7 +2,7 @@
 title: 说辞类
 index: false
 cover: 
-icon: laptop-code
+icon: folder-open
 order: 5
 author: 
 date: 2025-06-06

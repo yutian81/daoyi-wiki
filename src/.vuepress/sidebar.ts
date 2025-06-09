@@ -8,7 +8,7 @@ export default sidebar({
       icon: "book",
       prefix: "guide/",
       link: "guide/",
-      children: "structure",
+      children: "structure"
     },
     {
       text: "视频",

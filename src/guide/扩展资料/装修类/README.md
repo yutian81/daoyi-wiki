@@ -2,7 +2,7 @@
 title: 装修类
 index: false
 cover: 
-icon: laptop-code
+icon: folder-open
 order: 6
 author: 
 date: 2025-06-06

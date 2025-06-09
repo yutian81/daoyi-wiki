@@ -1,14 +1,17 @@
 ---
-title: 营销管理
+title: 05-自媒体营销
 index: false
 cover: 
-icon: laptop-code
-order: 2
+icon: folder-open
+order: 5
 author: 
 date: 2025-06-02
 tag:
-  - 管理
-  - 营销
+  - 抖音
+  - 朋友圈
+  - 微信
+  - 直播
+  - 自媒体
 category:
   - 文档
   - 知识
@@ -17,3 +20,4 @@ star:
 ---
 
 <Catalog />
+

@@ -1,16 +1,17 @@
 ---
-title: 专题报告
+title: 04-策划专题
 index: false
 cover: 
-icon: laptop-code
-order: 6
+icon: folder-open
+order: 4
 author: 
 date: 2025-06-02
 tag:
-  - 报告
   - 策划
+  - 广告
+  - 活动
   - 推广
-  - 销售
+  - 物料
 category:
   - 文档
   - 知识

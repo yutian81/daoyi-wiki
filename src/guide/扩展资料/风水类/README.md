@@ -2,7 +2,7 @@
 title: 风水类
 index: false
 cover: 
-icon: laptop-code
+icon: folder-open
 order: 1
 author: 
 date: 2025-06-06

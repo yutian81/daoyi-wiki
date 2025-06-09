@@ -1,16 +1,17 @@
 ---
-title: 基础知识
+title: 02-销售接待
 index: false
 cover: 
-icon: laptop-code
-order: 1
+icon: folder-open
+order: 2
 author: 
 date: 2025-06-02
 tag:
-  - 基础
-  - 知识
+  - 案场
+  - 接待
+  - 流程
+  - 销售
 category:
-  - 基础
   - 文档
   - 知识
 sticky: 

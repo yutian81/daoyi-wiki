@@ -1,18 +1,16 @@
 ---
-title: 策划专题
+title: 01-基础知识
 index: false
 cover: 
-icon: laptop-code
-order: 3
+icon: folder-open
+order: 1
 author: 
 date: 2025-06-02
 tag:
-  - 策划
-  - 广告
-  - 活动
-  - 推广
-  - 物料
+  - 基础
+  - 知识
 category:
+  - 基础
   - 文档
   - 知识
 sticky: 

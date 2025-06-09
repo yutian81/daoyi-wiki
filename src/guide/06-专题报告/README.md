@@ -1,15 +1,15 @@
 ---
-title: 销售接待
+title: 06-专题报告
 index: false
 cover: 
-icon: laptop-code
-order: 4
+icon: folder-open
+order: 6
 author: 
 date: 2025-06-02
 tag:
-  - 案场
-  - 接待
-  - 流程
+  - 报告
+  - 策划
+  - 推广
   - 销售
 category:
   - 文档

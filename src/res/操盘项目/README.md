@@ -2,7 +2,7 @@
 title: 操盘项目
 index: false
 cover: 
-icon: 
+icon: laptop-code
 order: 1
 author: 
 date: 2025-06-03
@@ -18,5 +18,3 @@ star:
 ---
 
 <Catalog />
-
-# 操盘项目

@@ -2,7 +2,7 @@
 title: 礼仪类
 index: false
 cover: 
-icon: laptop-code
+icon: folder-open
 order: 4
 author: 
 date: 2025-06-06
