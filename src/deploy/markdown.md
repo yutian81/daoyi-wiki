@@ -380,7 +380,49 @@ H\~2~O 19\^th^
 
 #### `include` 导入文件
 
+如果要部分导入文件，你可以指定导入的行数
+
+```
 <!-- @include: ./README.md{11-17} -->
+```
+
+同时你也可以导入文件区域:
+
+```
+<!-- @include: ./README.md#region -->
+```
+
+被导入的文件区域需要被 `region` 和 `endregion` 语法包裹
+
+以下为 html 和 md 语法示例
+
+```html
+    <!-- region snippet -->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
+      repellendus. Voluptatibus alias cupiditate at, fuga tenetur error officiis
+      provident quisquam autem, porro facere! Neque quibusdam animi quaerat
+      eligendi recusandae eaque.
+    </p>
+    <!-- endregion snippet -->
+```
+
+以下为 js 语法示例 (py 语法去掉 // 即可)
+
+```js
+const MarkdownIt = require("markdown-it");
+const { include } = require("@mdit/plugin-include");
+
+// #region snippet
+const mdIt = MarkdownIt().use(include, {
+  currentPath: (env) => env.filePath,
+});
+// #endregion snippet
+
+mdIt.render("<!-- @include: ./path/to/include/file.md -->", {
+  filePath: "path/to/current/file.md",
+});
+```
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/include.html)
 
@@ -496,7 +538,7 @@ $$
 
 #### `spoiler` 剧透
 
-使用 `!! !!` 标记需要隐藏的文字。请注意两边需要有空格。
+使用 `!!!!` 标记需要隐藏的文字。请注意两边需要有空格。
 
 ```
 VuePress Theme Hope !!十分强大!!.
@@ -567,12 +609,14 @@ VuePress Theme Hope !!十分强大!!.
 ```
 
 支持 obsidian 语法
+
 ```md
 ![alt文字|200x200](/example.png)
 ![alt文字|200x0](/example.jpg "0 表示自动比例")
 ```
 
 多图组合并带预览功能
+
 ```md
 ::: figure preview
 ![alt文字|200x200](/example.png)
@@ -582,6 +626,7 @@ VuePress Theme Hope !!十分强大!!.
 ```
 
 切换主题
+
 ```
 <ColorModeSwitch /> 👈 切换主题
 ![GitHub Light](/assets/image/github-light.svg#dark)
@@ -589,6 +634,7 @@ VuePress Theme Hope !!十分强大!!.
 ```
 
 支持 imgMark 的高级组合语法
+
 ```md
 ::: figure preview
 ![夜景图片](/scenery1.jpg#dark "只在夜间模式显示")
@@ -648,7 +694,6 @@ end
 ```
 
 - [View Detail](https://theme-hope.vuejs.press/zh/guide/markdown/chart/plantuml.html)
-
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/demo.html)
 
 #### 交互演示

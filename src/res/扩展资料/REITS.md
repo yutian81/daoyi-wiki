@@ -3,7 +3,7 @@ title: REITS
 index: true
 cover: 
 icon: 
-order: 1
+order: 7
 author: 
 date: 2025-06-06
 tag:

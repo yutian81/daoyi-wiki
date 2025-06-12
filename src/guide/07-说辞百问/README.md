@@ -1,16 +1,17 @@
 ---
-title: 说辞类
+title: 07-说辞百问
 index: false
 cover: 
 icon: folder-open
-order: 5
+order: 7
 author: 
 date: 2025-06-06
 tag:
-  - 目录
+  - 百问
+  - 话术
   - 说辞
 category:
-  - 扩展
+  - 百问
   - 说辞
   - 文档
   - 知识

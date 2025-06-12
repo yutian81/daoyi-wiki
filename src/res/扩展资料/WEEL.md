@@ -3,7 +3,7 @@ title: WEEL
 index: true
 cover: 
 icon: 
-order: 4
+order: 8
 author: 
 date: 2025-06-06
 tag:
@@ -114,7 +114,7 @@ star:
 		
 - **品牌溢价**：吸引健康意识强的租户或买家（租金溢价 5%~15%）。
 		
-- **ESG 战略**：满足投资者对 " 健康地产 " 的 [ESG](/res/借鉴学习/ESG) 评估要求（如 GRESB 评分）。
+- **ESG 战略**：满足投资者对 " 健康地产 " 的 [ESG](/res/扩展资料/ESG) 评估要求（如 GRESB 评分）。
 
 ### **❌ 挑战**
 

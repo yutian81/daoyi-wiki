@@ -2,9 +2,10 @@
 title: 资源
 index: false
 icon: wand-magic-sparkles
-order:
+order: 1
 category:
   - 资源
+  - 资料
 ---
 
 <Catalog />

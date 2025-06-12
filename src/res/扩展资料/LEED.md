@@ -3,7 +3,7 @@ title: LEED
 index: true
 cover: 
 icon: 
-order: 1
+order: 4
 author: 
 date: 2025-06-02
 tag:
@@ -110,7 +110,7 @@ star:
 
 **Q2: LEED 和 WELL 认证的区别？**
 
-- **LEED** 关注建筑整体可持续性，**[WELL](/guide/扩展资料/开发类/WEEL)** 专注人体健康（如空气质量、心理健康）。
+- **LEED** 关注建筑整体可持续性，**[WELL](/res/扩展资料/WEEL)** 专注人体健康（如空气质量、心理健康）。
 
 **Q3: 哪些建筑适合申请 LEED？**
 

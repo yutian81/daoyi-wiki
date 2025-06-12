@@ -1,19 +1,19 @@
 ---
-title: 开发类
+title: 扩展资料
 index: false
 cover: 
-icon: folder-open
-order: 3
+icon: laptop-code
+order: 
 author: 
-date: 2025-06-06
+date: 2025-06-02
 tag:
-  - 开发
-  - 目录
+  - 扩展
+  - 资料
 category:
-  - 开发
   - 扩展
   - 文档
   - 知识
+  - 资料
 sticky: 
 star: 
 ---
