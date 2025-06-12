@@ -1,5 +1,5 @@
 ---
-title: 技巧类
+title: 02-技巧类
 index: false
 cover: 
 icon: folder-open
