@@ -1,18 +1,18 @@
 ---
-title: 01-基础类
+title: 技巧类
 index: false
 cover: 
 icon: folder-open
-order: 1
+order: 2
 author: 
 date: 2025-06-12
 tag:
-  - 基础
-  - 知识
+  - 技巧
+  - 销售
 category:
+  - 话术
+  - 技巧
   - 视频
-  - 知识
-  - 基础
 sticky: 
 star: 
 ---

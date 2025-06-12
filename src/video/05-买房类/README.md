@@ -1,18 +1,16 @@
 ---
-title: 01-基础类
+title: 02-技巧类
 index: false
 cover: 
 icon: folder-open
-order: 1
+order: 5
 author: 
 date: 2025-06-12
 tag:
-  - 基础
-  - 知识
+  - 买房
 category:
   - 视频
-  - 知识
-  - 基础
+  - 买房
 sticky: 
 star: 
 ---

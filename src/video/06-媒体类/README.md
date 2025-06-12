@@ -1,18 +1,17 @@
 ---
-title: 01-基础类
+title: 媒体类
 index: false
 cover: 
 icon: folder-open
-order: 1
+order: 6
 author: 
 date: 2025-06-12
 tag:
-  - 基础
-  - 知识
+  - 传统媒体
+  - 新媒体
 category:
   - 视频
-  - 知识
-  - 基础
+  - 媒体
 sticky: 
 star: 
 ---
