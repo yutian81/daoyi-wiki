@@ -10,9 +10,9 @@ tag:
   - 公摊
   - 买房
 category:
-  - 公摊
-  - 买房
   - 视频
+  - 买房
+  - 公摊
 sticky: 
 star: 
 ---

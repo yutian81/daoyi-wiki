@@ -10,7 +10,6 @@ tag:
   - 技巧
   - 销售
 category:
-  - 话术
   - 技巧
   - 视频
 sticky: 

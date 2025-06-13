@@ -14,7 +14,6 @@ category:
   - 百问
   - 说辞
   - 文档
-  - 知识
 sticky: 
 star: 
 ---

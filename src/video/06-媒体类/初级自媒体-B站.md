@@ -12,6 +12,7 @@ tag:
   - 自媒体
 category:
   - 视频
+  - 媒体
   - 自媒体
 sticky: 
 star: 

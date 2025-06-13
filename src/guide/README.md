@@ -5,7 +5,6 @@ icon: book
 order: 1
 category:
   - 文档
-  - 知识
 ---
 
 <Catalog />

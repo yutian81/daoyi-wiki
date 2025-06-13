@@ -7,10 +7,11 @@ author: Ms.Hope
 date: 2020-01-01
 category:
   - 部署
-  - 页面
+  - wiki
 tag:
   - 页面
-  - 配置
+  - 样式
+  - 语法
 sticky: true
 star: true
 footer: 这是测试显示的页脚

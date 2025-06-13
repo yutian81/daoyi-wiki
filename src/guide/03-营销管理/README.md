@@ -11,7 +11,8 @@ tag:
   - 营销
 category:
   - 文档
-  - 知识
+  - 营销
+  - 管理
 sticky: 
 star: 
 ---

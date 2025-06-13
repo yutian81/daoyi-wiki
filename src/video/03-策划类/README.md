@@ -11,7 +11,6 @@ tag:
   - 知识
 category:
   - 视频
-  - 知识
   - 策划
 sticky: 
 star: 

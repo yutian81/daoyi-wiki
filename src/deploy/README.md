@@ -5,6 +5,7 @@ icon: bars-progress
 order:
 category:
   - 部署
+  - wiki
 ---
 
 <Catalog />

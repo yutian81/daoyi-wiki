@@ -1,11 +1,11 @@
 ---
-title: 视频
+title: 04-渠道类
 index: false
 icon: play
 order: 1
 category:
   - 视频
-  - 学习
+  - 渠道
 ---
 
 <Catalog />

@@ -7,13 +7,14 @@ order: 2
 author: 
 date: 2025-06-02
 tag:
-  - 案场
+  - 销售
   - 接待
   - 流程
-  - 销售
+  - 话术
 category:
   - 文档
-  - 知识
+  - 接待
+  - 流程
 sticky: 
 star: 
 ---

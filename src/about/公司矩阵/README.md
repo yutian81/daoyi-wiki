@@ -4,15 +4,10 @@ index: false
 icon: laptop-code
 order: 1
 tag:
-  - 企业
-  - 管理
-  - 架构
-  - 矩阵
-  - 培训
+  - 简介
+  - 公司
 category:
-  - 管理
-  - 制度
-  - 知识
+  - 简介
   - 公司
 ---
 

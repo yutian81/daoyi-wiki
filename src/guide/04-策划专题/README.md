@@ -8,13 +8,9 @@ author:
 date: 2025-06-02
 tag:
   - 策划
-  - 广告
-  - 活动
-  - 推广
-  - 物料
 category:
   - 文档
-  - 知识
+  - 策划
 sticky: 
 star: 
 ---

@@ -11,9 +11,8 @@ tag:
   - 资料
 category:
   - 扩展
-  - 文档
-  - 知识
-  - 资料
+  - 资源
+  - 学习
 sticky: 
 star: 
 ---

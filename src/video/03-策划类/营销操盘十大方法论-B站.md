@@ -7,13 +7,14 @@ order: 3
 author: 
 date: 2025-06-12
 tag:
+  - 营销
   - 策划
   - 方法
-  - 营销
+  - 操盘
 category:
-  - 策划
   - 视频
-  - 营销
+  - 策划
+  - 操盘
 sticky: 
 star: 
 ---

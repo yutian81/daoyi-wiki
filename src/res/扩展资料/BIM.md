@@ -9,10 +9,9 @@ date: 2025-06-10
 tag:
   - BIM
 category:
-  - 开发
   - 扩展
-  - 文档
-  - 知识
+  - 资源
+  - 学习
 sticky: 
 star: 
 ---

@@ -5,7 +5,7 @@ icon: wand-magic-sparkles
 order: 1
 category:
   - 资源
-  - 资料
+  - 文档
 ---
 
 <Catalog />

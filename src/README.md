@@ -61,7 +61,7 @@ highlights:
       - title: 扩展资料
         icon: lightbulb
         details: 延伸学习的阅读资料
-        link: ./guide/扩展资料/
+        link: ./res/扩展资料/
       - title: 管理体系
         icon: lightbulb
         details: 房地产公司企业管理体系

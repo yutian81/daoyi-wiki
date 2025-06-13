@@ -8,12 +8,11 @@ author:
 date: 2025-06-06
 tag:
   - 金融
-  - 融资
+  - 资金
 category:
-  - 金融
   - 扩展
-  - 文档
-  - 知识
+  - 资源
+  - 学习
 sticky: 
 star: 
 ---

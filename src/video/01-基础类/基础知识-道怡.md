@@ -10,8 +10,8 @@ tag:
   - 基础
   - 知识
 category:
-  - 基础
   - 视频
+  - 基础
   - 知识
 sticky: 
 star: 

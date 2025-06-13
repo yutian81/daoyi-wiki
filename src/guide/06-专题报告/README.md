@@ -13,7 +13,6 @@ tag:
   - 销售
 category:
   - 文档
-  - 知识
   - 专题
 sticky: 
 star: 
