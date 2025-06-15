@@ -187,8 +187,8 @@ export default hopeTheme({
       ],
       componentOptions: {
         pdf: {
-          pdfjs: "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.31/build/",
-        }
+          pdfjs: "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/build/",
+        },
       }
     },
 
