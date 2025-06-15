@@ -32,13 +32,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 <script src="../build/pdf.mjs" type="module"></script>
 
   <link rel="stylesheet" href="viewer.css">
-  <script>
-    if (location.hash.includes("toolbar=0")) {
-      const style = document.createElement("style");
-      style.textContent = "#toolbarContainer { display: none; }";
-      document.head.append(style);
-    }
-  </script>
+
   <script src="viewer.mjs" type="module"></script>
   </head>
 
