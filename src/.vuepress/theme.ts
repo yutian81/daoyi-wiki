@@ -185,8 +185,10 @@ export default hopeTheme({
         "VPCard",
         "VPBanner",
       ],
-      PDF: {
-        pdfjs: "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.31/build/"
+      componentOptions: {
+        pdf: {
+          pdfjs: "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.31/build/",
+        }
       }
     },
 
