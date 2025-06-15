@@ -188,11 +188,11 @@ export default hopeTheme({
         "VPCard",
         "VPBanner",
       ],
-      componentOptions: {
-        pdf: {
-          pdfjs: "/pdfjs/web/viewer.html",
-        },
-      }
+      //componentOptions: {
+      //  pdf: {
+      //    pdfjs: "https://cdn.jsdelivr.net/gh/mozilla/pdf.js@master/web/viewer.html",
+      //  },
+      //}
     },
 
     icon: {
