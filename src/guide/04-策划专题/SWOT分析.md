@@ -1,15 +1,15 @@
 ---
-title: SWOT
+title: SWOT分析
 index: true
 cover: 
 icon: 
-order: 10
+order: 16
 author: 
 date: 2025-06-14
 tag:
   - 策划
+  - 工具
   - 定位
-  - 分析
 category:
   - 策划
   - 文档

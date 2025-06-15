@@ -1,5 +1,5 @@
 ---
-title: 操盘项目
+title: 崇阳交投
 index: false
 cover: 
 icon: laptop-code
@@ -9,9 +9,9 @@ date: 2025-06-03
 tag:
   - 操盘
   - 崇阳
-  - 在售
+  - 交投
 category:
-  - 资源
+  - 操盘
   - 文档
   - 崇阳
 sticky: 
