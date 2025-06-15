@@ -1,7 +1,7 @@
 ---
 title: 04-渠道类
 index: false
-icon: play
+icon: folder-open
 order: 1
 category:
   - 视频
