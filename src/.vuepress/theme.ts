@@ -190,7 +190,7 @@ export default hopeTheme({
       ],
       componentOptions: {
         pdf: {
-          pdfjs: "https://cdn.jsdelivr.net/gh/mozilla/pdf.js@master/web/viewer.html",
+          pdfjs: "/pdfjs/",
         },
       }
     },
