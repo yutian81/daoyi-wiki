@@ -149,10 +149,13 @@ export default hopeTheme({
     comment: {
       provider: "Waline",
       serverURL: "https://waline.24811213.xyz/",
-      //visitor: true,
+      reaction: true,
+      pageview: true,
+      comment: true,
       emoji: [
         "//unpkg.com/@waline/emojis@1.1.0/weibo",
-        "//unpkg.com/@waline/emojis@1.1.0/bilibili",
+        "//unpkg.com/@waline/emojis@1.2.0/qq",
+        "//unpkg.com/@waline/emojis@1.2.0/bilibili",
         "//unpkg.com/@waline/emojis@1.1.0/tieba",
       ],
     },
@@ -187,7 +190,7 @@ export default hopeTheme({
       ],
       componentOptions: {
         pdf: {
-          pdfjs: "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/build/",
+          pdfjs: "https://cdn.jsdelivr.net/npm/pdfjs-dist@latest/",
         },
       }
     },
