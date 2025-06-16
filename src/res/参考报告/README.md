@@ -1,7 +1,7 @@
 ---
 title: 参考报告
 index: false
-icon: wand-magic-sparkles
+icon: laptop-code
 order: 4
 category:
   - 资源
