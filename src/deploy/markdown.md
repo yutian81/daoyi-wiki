@@ -284,6 +284,20 @@ layout: SlidePage
 
 > 你可以通过插件选项中的 `layout` 来自定义此行为，比如使用 `false` 来禁用它或填入其他布局名称。
 
+- 全局控制幻灯片字号
+
+在 `根目录/src/.vuepress/styles/index.scss` 中添加以下代码（缩小为 0.8）
+
+```
+.reveal {
+  font-size: 0.8rem;
+}
+
+.reveal * {
+  font-size: inherit;
+}
+```
+
 #### `vPre` 模板
 
 ```
