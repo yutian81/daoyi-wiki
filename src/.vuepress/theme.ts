@@ -18,6 +18,10 @@ export default hopeTheme({
   sidebar,  // 侧边栏
   footer: '基于 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 框架构建 | 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题',
   displayFooter: true,
+  // 跳转到 github 编辑
+  metaLocales: {
+    editLink: "在 GitHub 上编辑此页",
+  },
 
   // 加密配置
   encrypt: {
@@ -32,11 +36,6 @@ export default hopeTheme({
         password: "1234",
       },
     },
-  },
-
-  // 跳转到 github 编辑
-  metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
@@ -196,7 +195,7 @@ export default hopeTheme({
     },
 
     icon: {
-      prefix: "fa6-solid:",
+      assets: "fontawesome-with-brands",
     },
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
