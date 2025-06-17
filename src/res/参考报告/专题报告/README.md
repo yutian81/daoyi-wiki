@@ -1,7 +1,7 @@
 ---
 title: 专题报告
 index: false
-icon: wand-magic-sparkles
+icon: folder-open
 order: 3
 category:
   - 参考

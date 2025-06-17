@@ -1,7 +1,7 @@
 ---
 title: 整合推广
 index: false
-icon: wand-magic-sparkles
+icon: folder-open
 order: 3
 category:
   - 参考

@@ -1,7 +1,7 @@
 ---
 title: 营销提案
 index: false
-icon: wand-magic-sparkles
+icon: folder-open
 order: 2
 category:
   - 参考

@@ -1,7 +1,7 @@
 ---
 title: 前策定位
 index: false
-icon: wand-magic-sparkles
+icon: folder-open
 order: 1
 category:
   - 参考
