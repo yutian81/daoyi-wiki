@@ -4,10 +4,10 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://wiki.811520.xyz/",
+  hostname: "https://wiki.notett.com",
   author: {
     name: "Daoyi Real Estate",
-    url: "https://wiki.811520.xyz/",
+    url: "https://wiki.notett.com",
   },
   logo: "/logo.svg",
   repo: "yutian81/daoyi-wiki",
