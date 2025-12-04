@@ -160,7 +160,7 @@ export default hopeTheme({
         } else if (typeof tags === 'string') {
           extraFields.push(tags);
         }
-        // title 默认会被搜索，但为确保万无一失可以再次加入
+        // 提取 title (标题)
         if (page.data.frontmatter.title) {
           extraFields.push(page.data.frontmatter.title);
         }
