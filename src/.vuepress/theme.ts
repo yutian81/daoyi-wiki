@@ -118,7 +118,7 @@ export default hopeTheme({
     // 启用幻灯片前先安装 @vuepress/plugin-revealjs
     revealjs: {
       themes: ["auto"],
-      plugins: ["highlight","math","search","notes","zoom"],
+      plugins: ["highlight", "math", "search", "notes", "zoom"],
     },
 
     // math: {
@@ -187,18 +187,18 @@ export default hopeTheme({
         "VPCard",
         "VPBanner",
       ],
-      //componentOptions: {
-      //  pdf: {
-      //    pdfjs: "https://cdn.jsdelivr.net/gh/mozilla/pdf.js@master/web/viewer.html",
-      //  },
-      //}
+      componentOptions: {
+        pdf: {
+          pdfjs: "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.449/+esm",
+        },
+      }
     },
 
     icon: {
       assets: "fontawesome-with-brands",
     },
 
-    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
+    // 如果你需要 PWA, 安装 @vuepress/plugin-pwa 并取消下方注释
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,
