@@ -140,9 +140,33 @@ export default hopeTheme({
   plugins: {
     sitemap: true,
     photoSwipe: true,
+    blog: true,
     feed: true,
-    search: true,
     readingTime: true,
+    search: {
+      getExtraFields: (page) => {
+        const extraFields = [];
+        // 提取 category (分类)
+        const categories = page.data.frontmatter.category;
+        if (Array.isArray(categories)) {
+          extraFields.push(...categories);
+        } else if (typeof categories === 'string') {
+          extraFields.push(categories);
+        }
+        // 提取 tag (标签)
+        const tags = page.data.frontmatter.tag;
+        if (Array.isArray(tags)) {
+          extraFields.push(...tags);
+        } else if (typeof tags === 'string') {
+          extraFields.push(tags);
+        }
+        // title 默认会被搜索，但为确保万无一失可以再次加入
+        if (page.data.frontmatter.title) {
+          extraFields.push(page.data.frontmatter.title);
+        }
+        return extraFields;
+      },
+    },
 
     // 评论模块
     comment: {
@@ -158,22 +182,6 @@ export default hopeTheme({
         "//unpkg.com/@waline/emojis@1.1.0/tieba",
       ],
     },
-    // 搜索模块
-    //docsearch: {
-    //  appId: 'J8AAAZLZZ7',
-    //  apiKey: '94c1d72ea8e1533fc67c3e7244c7e196',
-    //  indexName: 'daoyi-wiki',
-    //  placeholder: '搜索文档',
-    //  translations: {
-    //    button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
-    //    modal: {
-    //      searchBox: { resetButtonTitle: '清除', cancelButtonText: '取消' },
-    //      errorScreen: { titleText: '无法获取结果', helpText: '请检查网络连接' },
-    //      noResultsScreen: { noResultsText: '无搜索结果', suggestedQueryText: '尝试其他关键词' },
-    //      footer: { selectText: '选择', navigateText: '切换', closeText: '关闭' }
-    //    }
-    //  }
-    //},
 
     components: {
       components: [

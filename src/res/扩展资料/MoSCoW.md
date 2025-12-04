@@ -12,7 +12,7 @@ tag:
 category:
   - 扩展
   - 资源
-  - 学习
+  - 管理
 sticky: 
 star: 
 ---

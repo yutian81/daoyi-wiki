@@ -3,7 +3,7 @@ title: 加密
 icon: lock
 category:
   - 部署
-  - wiki
+  - 加密
 tag:
   - 加密
 ---

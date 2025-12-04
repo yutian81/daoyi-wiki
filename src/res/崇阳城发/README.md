@@ -6,13 +6,9 @@ icon: laptop-code
 order: 2
 author: 
 date: 2025-06-03
-tag:
-  - 操盘
-  - 崇阳
-  - 城发
 category:
   - 操盘
-  - 文档
+  - 资源
   - 崇阳
 sticky: 
 star: 

@@ -7,12 +7,14 @@ order: 2
 author: 
 date: 2025-06-16
 tag:
-  - 项目定位
-  - 前期策划
-category:
-  - 参考
   - 定位
-  - 前策
+  - 前期
+  - 住宅
+category:
+  - 资源
+  - 参考
+  - 前期
+  - 住宅
 sticky: 
 star: 
 ---

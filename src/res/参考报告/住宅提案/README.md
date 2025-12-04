@@ -1,12 +1,13 @@
 ---
-title: 营销提案
+title: 住宅提案
 index: false
 icon: folder-open
 order: 2
 category:
   - 参考
-  - 营销
-  - 策略
+  - 资源
+  - 提案
+  - 住宅
 ---
 
 <Catalog />

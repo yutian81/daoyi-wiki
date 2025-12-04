@@ -6,9 +6,6 @@ icon: folder-open
 order: 3
 author: 
 date: 2025-06-02
-tag:
-  - 管理
-  - 营销
 category:
   - 文档
   - 营销

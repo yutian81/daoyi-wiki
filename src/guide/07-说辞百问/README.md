@@ -6,10 +6,6 @@ icon: folder-open
 order: 7
 author: 
 date: 2025-06-06
-tag:
-  - 百问
-  - 话术
-  - 说辞
 category:
   - 百问
   - 说辞

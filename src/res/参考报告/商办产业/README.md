@@ -5,6 +5,7 @@ icon: folder-open
 order: 4
 category:
   - 参考
+  - 资源
   - 商办
   - 产业
 ---

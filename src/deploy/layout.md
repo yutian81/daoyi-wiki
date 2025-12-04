@@ -4,7 +4,7 @@ icon: object-group
 order: 2
 category:
   - 部署
-  - wiki
+  - 布局
 tag:
   - 布局
 ---

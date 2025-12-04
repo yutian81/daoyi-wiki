@@ -6,12 +6,8 @@ icon: folder-open
 order: 1
 author: 
 date: 2025-06-02
-tag:
-  - 房地产
-  - 基础
-  - 知识
 category:
-  - 基础
+  - 基础知识
   - 文档
 sticky: 
 star: 

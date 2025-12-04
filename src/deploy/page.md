@@ -7,7 +7,7 @@ author: Ms.Hope
 date: 2020-01-01
 category:
   - 部署
-  - wiki
+  - 页面
 tag:
   - 页面
   - 样式

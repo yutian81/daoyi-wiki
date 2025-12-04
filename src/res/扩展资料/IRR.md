@@ -9,10 +9,11 @@ date: 2025-06-06
 tag:
   - 财务
   - 金融
+  - IRR
 category:
   - 扩展
   - 资源
-  - 学习
+  - 财务
 sticky: 
 star: 
 ---

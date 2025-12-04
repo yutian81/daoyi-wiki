@@ -5,8 +5,6 @@ cover:
 icon: folder-open
 author: 
 date: 2025-06-02
-tag:
-  - 策划
 category:
   - 文档
   - 策划

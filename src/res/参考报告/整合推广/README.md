@@ -5,7 +5,7 @@ icon: folder-open
 order: 3
 category:
   - 参考
-  - 整合
+  - 资源
   - 推广
 ---
 

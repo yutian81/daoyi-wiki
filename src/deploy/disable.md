@@ -4,7 +4,7 @@ icon: gears
 order: 4
 category:
   - 部署
-  - wiki
+  - 禁用
 tag:
   - 禁用
 navbar: false

@@ -11,8 +11,7 @@ tag:
   - 知识
 category:
   - 视频
-  - 基础
-  - 知识
+  - 基础知识
 sticky: 
 star: 
 ---

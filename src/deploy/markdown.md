@@ -12,7 +12,7 @@ tag:
   - MD
 category:
   - 部署
-  - wiki
+  - MD
 sticky: 
 star: 
 ---

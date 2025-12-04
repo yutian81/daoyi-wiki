@@ -5,7 +5,6 @@ icon: play
 order: 1
 category:
   - 视频
-  - 学习
 ---
 
 <Catalog />
