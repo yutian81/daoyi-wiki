@@ -2,7 +2,7 @@
 title: Markdown
 index: true
 cover: 
-icon: fa6-brands:markdown
+icon: file-code
 order: 2
 author: 
 date: 2025-06-02

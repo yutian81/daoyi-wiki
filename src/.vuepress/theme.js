@@ -178,7 +178,7 @@ export default hopeTheme({
     components: {
       components: [
         "SiteInfo",
-        "VidStack",
+        "VidStack", // 可嵌入式播放 youtube，src="youtube/_cMxraX_5RE"
         "ArtPlayer",
         "BiliBili",
         "Share",
