@@ -6,8 +6,8 @@ import sidebar from "./sidebar.js";
 export default hopeTheme({
   hostname: "https://wiki.notett.com",
   author: {
-    name: "Daoyi Real Estate",
-    url: "https://wiki.notett.com",
+    name: "九天之上青云志",
+    url: "https://blog.notett.com",
   },
   logo: "/logo.svg",
   repo: "yutian81/daoyi-wiki",
@@ -171,7 +171,7 @@ export default hopeTheme({
     // 评论模块
     comment: {
       provider: "Waline",
-      serverURL: "https://waline.24811213.xyz/",
+      serverURL: "https://waline.24811213.xyz",
       reaction: true,
       pageview: true,
       comment: true,
@@ -247,8 +247,8 @@ export default hopeTheme({
         ],
         shortcuts: [
           {
-            name: "道怡团队知识库",
-            short_name: "DaoyiWiki",
+            name: "青云志个人知识库",
+            short_name: "QingYunWiki",
             url: "/guide/",
             icons: [
               {
