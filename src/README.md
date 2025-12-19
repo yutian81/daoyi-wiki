@@ -7,7 +7,7 @@ bgImage: https://pan.811520.xyz/2025-06/1748770675-6-light.webp
 bgImageDark: https://pan.811520.xyz/2025-06/1748770814-6-dark.webp
 bgImageStyle:
   background-attachment: fixed
-heroText: 道怡地产团队知识库
+heroText: 青云志个人知识库
 tagline: 房地产营销百科全书, 记录我们在营销过程中的思考和实践
 heroStyle:
   min-height: 480px
@@ -69,4 +69,5 @@ highlights:
 
 copyright: Copyright © 2025 Daoyi Real Estate
 footer: 基于 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 框架构建 | 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议
+
 ---
