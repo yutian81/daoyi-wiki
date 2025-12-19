@@ -5,8 +5,8 @@ import theme from "./theme.js";
 export default defineUserConfig({
   base: "/",
   lang: "zh-CN",
-  title: "道怡地产",
-  description: "道怡地产团队知识库——地产营销的百科全书",
+  title: "青云志",
+  description: "青云志个人知识库——地产营销的百科全书",
 
   theme,
 
@@ -14,7 +14,7 @@ export default defineUserConfig({
     ['meta', { charset: 'utf-8' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' }],
     ['meta', { name: 'theme-color', content: '#1e88e5' }],
-    ['meta', { name: 'keywords', content: '房地产,营销,标准化,道怡地产,知识库' }],
+    ['meta', { name: 'keywords', content: '房地产,营销,标准化,知识库' }],
     ['meta', { name: 'algolia-site-verification', content: '710F89C1784D6EB6' }],
   ],
 
