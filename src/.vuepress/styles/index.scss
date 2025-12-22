@@ -3,14 +3,6 @@
 @use "vuepress-theme-hope/presets/bounce-icon";
 @use "vuepress-theme-hope/presets/shinning-feature-panel";
 
-.reveal {
-  font-size: 1.6rem;
-}
-
-.reveal * {
-  font-size: inherit;
-}
-
-.footer a {
-  text-decoration: none !important;
-}
+.reveal { font-size: 1.6rem; }
+.reveal * { font-size: inherit; }
+.vp-footer a { text-decoration: none !important; }
