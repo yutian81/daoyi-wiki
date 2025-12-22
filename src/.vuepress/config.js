@@ -5,7 +5,7 @@ import theme from "./theme.js";
 export default defineUserConfig({
   base: "/",
   lang: "zh-CN",
-  title: "青云志",
+  title: "青云志-房地产营销Wiki库",
   description: "青云志个人知识库——地产营销的百科全书",
 
   theme,
