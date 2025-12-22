@@ -66,8 +66,6 @@ highlights:
         icon: lightbulb
         details: 房地产公司企业管理体系
         link: ./about/管理体系/
-
-copyright: Copyright © 2025 Daoyi Real Estate
+copyright: Copyright © 2025 Yutian81
 footer: 基于 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 框架构建 | 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议
-
 ---
