@@ -171,15 +171,17 @@ export default hopeTheme({
     // 评论模块
     comment: {
       provider: "Waline",
-      serverURL: "https://waline.24811213.xyz",
+      serverURL: "https://waline.ccmail.pp.ua",
       reaction: true,
       pageview: true,
       comment: true,
       emoji: [
-        "//unpkg.com/@waline/emojis@1.1.0/weibo",
-        "//unpkg.com/@waline/emojis@1.2.0/qq",
-        "//unpkg.com/@waline/emojis@1.2.0/bilibili",
-        "//unpkg.com/@waline/emojis@1.1.0/tieba",
+        "//unpkg.com/@waline/emojis@1.4.0/qq",
+        "//unpkg.com/@waline/emojis@1.4.0/tieba",
+        "//unpkg.com/@waline/emojis@1.4.0/bmoji",
+        "//unpkg.com/@waline/emojis@1.4.0/tw-emoji",
+        "//cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan",
+        "//cdn.jsdelivr.net/npm/sticker-heo@2022.7.5/Sticker-100",
       ],
     },
 
